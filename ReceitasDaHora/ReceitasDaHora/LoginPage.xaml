@@ -7,7 +7,9 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center"
                      VerticalOptions="CenterAndExpand">
-            <Label Text="Bem vindo(a) ao ReceitasDaHora" Style="{StaticResource txtBemVindo}" />
+            <Image Source="meal.png" />
+            <Label Text="Bem vindo(a) ao ReceitasDaHora!" Style="{StaticResource txtBemVindo}" />
+            <Label Text="Por favor logue-se via Facebook para ter acesso às nossas receitas." Style="{StaticResource txtBemVindo}" />
             <Button Command="{Binding LoginCommand}" Text="Conectar via Facebook" Style="{StaticResource btnFacebook}" />
         </StackLayout>
     </ContentPage.Content>

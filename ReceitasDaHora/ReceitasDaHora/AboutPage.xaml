@@ -4,15 +4,19 @@
              x:Class="ReceitasDaHora.AboutPage"
              Title="Sobre">
     <ContentPage.Content>
-        <TableView Intent="Settings">
-            <TableRoot>
-                <TableSection Title="Versão">
-                    <TextCell Text="{Binding Versao}"/>
-                </TableSection>
-                <TableSection Title="Termos de uso">
-                    <SwitchCell Text="Aceito os termos de uso"/>
-                </TableSection>
-            </TableRoot>
-        </TableView>
+        <StackLayout Style="{StaticResource innerContent}">
+            <Label Text="O que fazemos?" Style="{StaticResource titulo}" />
+            <Label Text="O aplicativo possui uma base de dados repleta de receitas de doces, salgados, massas e muito mais. Todas as informações fornecidas são de uso público e possuem referências."
+                   Style="{StaticResource paragrafo}" />
+
+            <Label Text="Dúvidas ou Sugestões?" Style="{StaticResource titulo}" />
+            <Label Style="{StaticResource paragrafo}" Text='Caso possua dúvidas ou sugestões, favor enviar para "matheus91@outlook.com"' />
+
+            <Label Text="Versão da Aplicação" Style="{StaticResource titulo}" />
+            <Label Text="{Binding Versao}" Style="{StaticResource paragrafo}" />
+
+            <Label Text="Desenvolvido Por" Style="{StaticResource titulo}" />
+            <Label Text="Matheus Marques" Style="{StaticResource paragrafo}" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

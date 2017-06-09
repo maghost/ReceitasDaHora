@@ -5,18 +5,24 @@
 	<Application.Resources>
 
         <ResourceDictionary>
+            <Style x:Key="innerContent" TargetType="StackLayout">
+                <Setter Property="Padding" Value="20" />
+            </Style>
+            
             <Style x:Key="loginPageStyle" TargetType="ContentPage">
-                <Setter Property="BackgroundImage" Value="food.jpg" />
-                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="#EEEEEE" />
             </Style>
 
             <Style x:Key="txtBemVindo" TargetType="Label">
-                <Setter Property="TextColor" Value="White" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="15, 5, 15, 5" />
             </Style>
 
             <Style x:Key="btnFacebook" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Aqua" />
-                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="#280680" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="15, 5, 15, 5" />
             </Style>
 
             <Style x:Key="boxCategoria" TargetType="StackLayout">
@@ -26,6 +32,17 @@
             <Style x:Key="txtNomeCategoria" TargetType="Label">
                 <Setter Property="TextColor" Value="Black" />
                 <Setter Property="FontSize" Value="Large" />
+            </Style>
+
+            <Style x:Key="titulo" TargetType="Label">
+                <Setter Property="Margin" Value="0, 10, 0, 3" />
+                <Setter Property="TextColor" Value="#E53935" />
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+
+            <Style x:Key="paragrafo" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="Small" />
             </Style>
         </ResourceDictionary>
 
