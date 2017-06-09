@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReceitasDaHora.ReceitaPage"
+             Title="{Binding Receita.Titulo}">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Vertical" Style="{StaticResource boxReceita}">
+                <Image Source="{Binding Receita.Banner}" Style="{StaticResource imgBanner}" />
+                <Label Text="{Binding Receita.Titulo}" Style="{StaticResource txtTituloReceita}" />
+                <Label Text="{Binding Receita.TempoPreparo}" Style="{StaticResource txtTempoPreparo}" />
+                <Label Text="{Binding Receita.Rendimento}" Style="{StaticResource txtRendimento}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

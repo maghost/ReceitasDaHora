@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ReceitasDaHora"
+             x:Class="ReceitasDaHora.MainPage"
+             xmlns:controls="clr-namespace:ReceitasDaHora.Controls;assembly:ReceitasDaHora"
+             Title="Categorias">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sobre" Command="{Binding AboutCommand}"/>
+        <ToolbarItem Text="Buscar" Command="{Binding SearchCommand}"/>
+    </ContentPage.ToolbarItems>
+    <controls:MyListView x:Name="lvwCategorias"
+                         ItemsSource="{Binding Categorias}" 
+                         HasUnevenRows="True"
+                         ItemTappedCommand="{Binding ShowCategoriaCommand}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Style="{StaticResource boxCategoria}">
+                        <Label Text="{Binding Nome}" Style="{StaticResource txtNomeCategoria}" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </controls:MyListView>
+
+</ContentPage>

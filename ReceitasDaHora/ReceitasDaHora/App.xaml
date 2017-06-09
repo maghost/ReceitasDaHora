@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReceitasDaHora.App">
+	<Application.Resources>
+
+        <ResourceDictionary>
+            <Style x:Key="loginPageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundImage" Value="food.jpg" />
+                <Setter Property="BackgroundColor" Value="Black" />
+            </Style>
+
+            <Style x:Key="txtBemVindo" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+            <Style x:Key="btnFacebook" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Aqua" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+
+            <Style x:Key="boxCategoria" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Horizontal" />
+            </Style>
+
+            <Style x:Key="txtNomeCategoria" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

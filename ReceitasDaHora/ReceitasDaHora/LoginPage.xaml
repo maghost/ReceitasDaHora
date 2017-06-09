@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReceitasDaHora.LoginPage"
+             Title="ReceitasDaHora"
+             Style="{StaticResource loginPageStyle}">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Bem vindo(a) ao ReceitasDaHora" Style="{StaticResource txtBemVindo}" />
+            <Button Command="{Binding LoginCommand}" Text="Conectar via Facebook" Style="{StaticResource btnFacebook}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

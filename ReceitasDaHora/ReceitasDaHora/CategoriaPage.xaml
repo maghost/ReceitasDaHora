@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ReceitasDaHora.Controls;assembly:ReceitasDaHora"
+             x:Class="ReceitasDaHora.CategoriaPage"
+             Title="Receitas">
+    <ContentPage.Content>
+        <controls:MyListView ItemsSource="{Binding Receitas}"
+                             ItemTappedCommand="{Binding ShowReceitaCommand}"
+                             HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Style="{StaticResource boxReceita}">
+                            <Image Source="{Binding Banner}" Style="{StaticResource imgBanner}" />
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Titulo}" Style="{StaticResource txtTituloReceita}" />
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding TempoPreparo}" Style="{StaticResource txtTempoPreparo}" />
+                                    <Label Text="{Binding Rendimento}" Style="{StaticResource txtRendimento}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </controls:MyListView>
+    </ContentPage.Content>
+</ContentPage>
